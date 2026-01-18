@@ -10,7 +10,7 @@ This project analyzes customer behavior for a **video streaming platform** with 
 The analysis combines **exploratory data analysis (EDA)**, **churn-focused aggregations**, **segmentation logic**, and **machine learning models** to generate actionable insights that could be used by product, marketing, or retention teams.
 
 > Note: The dataset is composed of mock data for a fictional company. It was generated using Le Chat's generative AI model.
----
+
 
 ## 🧠 Key Questions
 <b><i> Segmentation </b></i>
@@ -22,7 +22,7 @@ The analysis combines **exploratory data analysis (EDA)**, **churn-focused aggre
 * Which dataset features are the most important to predict churn likelihood?
 * What is the churn probability for different age groups and engagement behaviours?
 * Which model is best to use for predicting subscriber churn to balance accuracy with interpretability?
----
+
 
 ## 📊 Dataset Description
 
@@ -33,7 +33,6 @@ The dataset represents users of a video streaming platform and includes:
 * **Behavioral / derived features**: cluster assignments
 * **Target variable**: subscribed vs. churned
 
----
 
 ## 🔍 Methodology
 
@@ -61,33 +60,40 @@ The dataset represents users of a video streaming platform and includes:
 * Percentages are computed **within each cluster** to allow fair comparison
 
 ### 3. Churn Prediction Model
+Different machine learning models are trained, tested and tuned to find the best model for the data: 
+* Logistic Regression
+* Decision Tree
+* Random Forest
+  
+Once the most accurate model is selected:
+* The most important risk factors for customer churn are identified
+* The probability that each customer churns is extracted
+* The model is deployed to predict whether new customers will churn based on their engagement characteristics and age group
 
-
-
----
 
 ## 🛠 Tech Stack
 
-* **Python**
-  * pandas (Data manipulation & transformation)
-  * scikit-learn (Machine learning models & evaluation)
-  * seaborn (Data visualization)
+**Python**
+ * pandas (Data manipulation & transformation)
+ * scikit-learn (Machine learning models & evaluation)
+ * seaborn (Data visualization)
 
----
 
 ## 📈 Key Insights
 
-* Certain clusters exhibit **consistently higher churn rates**
-* Churn behavior varies meaningfully across **age groups**
-* Normalizing by cluster size is essential to avoid misleading conclusions
+* Segementation reveals that customers with both low engagement frequency and low engagement time are at the highest churn risk
+  * Thresholds of engagement time below 7.5 minutes and engagement frequency below 10 define this group
+  * Targeted or automated marketing campaigns should be focused on customers that fall under these engagement thresholds
+* Churn behavior varies meaningfully across age groups, with customers over 35 exhibiting the highest churn risk
+* The Random Forest model performed the best on predicting subscriber churn, achieving an F1 score/accuracy of 94%
+* Engagement frequency contributes the most to the machine learning model's churn prediction, indicating that this characteristic may be the most important when monitoring subscriber engagement behaviour for churn risk
 
 These insights can inform:
 
 * targeted retention campaigns
+* automation strategies
 * pricing or plan adjustments
 * personalized product recommendations
-
----
 
 ## 📁 Project Structure
 
@@ -98,15 +104,11 @@ These insights can inform:
 ├── README.md             # Project documentation
 ```
 
----
-
 ## 🚀 How to Use
 
 1. Clone the repository
 2. Open `notebook.ipynb` in Jupyter
 3. Run cells top-to-bottom to reproduce the analysis
-
----
 
 ## 🔮 Future Improvements
 
