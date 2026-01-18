@@ -69,9 +69,9 @@ The dataset represents users of a video streaming platform and includes:
 ## 🛠 Tech Stack
 
 * **Python**
-* pandas (Data manipulation & transformation)
-* scikit-learn (Machine learning models & evaluation)
-* seaborn (Data visualization)
+  * pandas (Data manipulation & transformation)
+  * scikit-learn (Machine learning models & evaluation)
+  * seaborn (Data visualization)
 
 ---
 
