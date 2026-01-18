@@ -7,7 +7,13 @@ This project analyzes customer behavior for a **video streaming platform** with 
 1. **Customer segmentation** – identify distinct user groups based on demographics and subscription behavior.
 2. **Subscriber churn prediction** – understand and quantify which factors are associated with users cancelling their subscription via testing machine learning models.
 
-The analysis combines **exploratory data analysis (EDA)**, **churn-focused aggregations**, **segmentation logic**, and **machine learning models** to generate actionable insights that could be used by product, marketing, or retention teams.
+The analysis combines:
+- **exploratory data analysis (EDA)**
+- **churn-focused disaggregations by age groups**
+- **customer persona segmentation using clustering**
+- **machine learning models** to generate actionable insights
+- **model deployment for prediciting churn likelihood of new customers** based on engagement characteristics and age group.
+- This model can then be deployed as part of automated workflows or data pipelines to determine churn probability on scheduled intervals and target users above a certain probability with target retentions strategies.
 
 > Note: The dataset is composed of mock data for a fictional company. It was generated using Le Chat's generative AI model.
 
@@ -42,8 +48,7 @@ The dataset represents users of a video streaming platform and includes:
 * Overall churn rate
 * Churn comparison by subscription status
 * Grouped percentage calculations to normalize comparisons
-* * Churn rates are calculated:
-
+* Churn rates are calculated:
   * overall
   * by age group
   * by cluster
