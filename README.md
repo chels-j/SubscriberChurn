@@ -1,4 +1,4 @@
-# Customer Segmentation and Subscriber Churn Prediction
+# 🎯📈 Customer Segmentation and Subscriber Churn Prediction
 
 ## 📌 Project Overview
 
