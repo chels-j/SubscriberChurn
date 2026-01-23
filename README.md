@@ -13,7 +13,9 @@ The analysis combines:
 - **customer persona segmentation using clustering**
 - **machine learning models** to generate actionable insights
 - **model deployment for prediciting churn likelihood of new customers** based on engagement characteristics and age group.
-- This model can then be deployed as part of automated workflows or data pipelines to determine churn probability on scheduled intervals and target users above a certain probability with target retentions strategies.
+- This model can then be deployed as part of automated workflows or data pipelines to:
+  - determine churn probability on scheduled intervals
+  - target users above a certain probability with targeted retention strategies
 
 > Note: The dataset is composed of mock data for a fictional company. It was generated using Le Chat's generative AI model.
 
